@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <a href="#top" className="flex items-center gap-2.5 mb-4">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-ember-500 to-electric-600">
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-gold-600">
                 <Code2 className="h-5 w-5 text-ink-950" strokeWidth={2.5} />
               </span>
               <span className="font-display text-lg font-semibold text-white">IDEAKODE</span>

@@ -8,19 +8,19 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-ink-950 via-ink-950/80 to-ink-950" />
 
       {/* Glowing orbs */}
-      <div className="pointer-events-none absolute -top-20 left-1/4 h-[500px] w-[500px] rounded-full bg-ember-600/20 blur-[120px] animate-pulse-slow" />
-      <div className="pointer-events-none absolute top-1/3 right-1/4 h-[450px] w-[450px] rounded-full bg-electric-600/15 blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="pointer-events-none absolute -top-20 left-1/4 h-[500px] w-[500px] rounded-full bg-emerald-600/20 blur-[120px] animate-pulse-slow" />
+      <div className="pointer-events-none absolute top-1/3 right-1/4 h-[450px] w-[450px] rounded-full bg-gold-600/15 blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 w-full">
         <div className="max-w-4xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 mb-8 animate-[float_6s_ease-in-out_infinite]">
-            <Sparkles className="h-3.5 w-3.5 text-ember-400" />
+            <Sparkles className="h-3.5 w-3.5 text-emerald-400" />
             <span className="text-xs font-medium tracking-wide text-ink-200">
               A DS Softwares initiative
             </span>
             <span className="h-1 w-1 rounded-full bg-ink-500" />
-            <span className="text-xs font-medium text-ember-400">Est. student-led</span>
+            <span className="text-xs font-medium text-emerald-400">Est. student-led</span>
           </div>
 
           {/* Headline */}
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
               href="#events"
-              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-ember-500 to-ember-600 px-7 py-4 text-sm font-semibold text-white transition-all hover:shadow-xl hover:shadow-ember-600/30 hover:-translate-y-0.5"
+              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-7 py-4 text-sm font-semibold text-white transition-all hover:shadow-xl hover:shadow-emerald-600/30 hover:-translate-y-0.5"
             >
               <Zap className="h-4 w-4" fill="currentColor" />
               Explore Our Events

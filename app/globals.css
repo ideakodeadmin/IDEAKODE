@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-ink-950 text-ink-100 font-sans antialiased; overflow-x: hidden; }
+  ::selection { @apply bg-emerald-500/30 text-ink-50; }
+}
+
+@layer utilities {
+  .text-gradient-emerald { @apply bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-200 bg-clip-text text-transparent; }
+  .text-gradient-gold { @apply bg-gradient-to-r from-gold-200 via-gold-400 to-gold-300 bg-clip-text text-transparent; }
+  .text-gradient-mix {
+    background: linear-gradient(110deg, #34d399, #10b981, #fcd34d, #f59e0b);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s ease infinite;
+  }
+  .glass { @apply border border-ink-50/[0.06] bg-ink-50/[0.03] backdrop-blur-xl; }
+  .glass-strong { @apply border border-ink-50/[0.08] bg-ink-50/[0.05] backdrop-blur-2xl; }
+  .grid-bg {
+    background-image: linear-gradient(to right, rgba(245,247,246,.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(245,247,246,.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .radial-fade { -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%); mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%); }
+  .glow-emerald { box-shadow: 0 0 40px -8px rgba(16,185,129,.42); }
+  .glow-gold { box-shadow: 0 0 40px -8px rgba(245,158,11,.35); }
+  .shimmer-text { background: linear-gradient(90deg,#526059 0%,#f5f7f6 50%,#526059 100%); background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; animation:shimmer 2.5s linear infinite; }
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #050a08; }
+::-webkit-scrollbar-thumb { background: #27312c; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #10b981; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

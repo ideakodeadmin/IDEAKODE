@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 
@@ -31,7 +33,7 @@ export default function Navbar() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2.5 group">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-ember-500 to-electric-600 transition-transform group-hover:scale-105">
+            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-gold-600 transition-transform group-hover:scale-105">
               <Code2 className="h-5 w-5 text-ink-950" strokeWidth={2.5} />
             </span>
             <span className="font-display text-lg font-semibold tracking-tight text-white">
@@ -54,10 +56,10 @@ export default function Navbar() {
           <div className="hidden md:block">
             <a
               href="#join"
-              className="group relative inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-ink-950 transition-all hover:shadow-lg hover:shadow-ember-500/20"
+              className="group relative inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-ink-950 transition-all hover:shadow-lg hover:shadow-emerald-500/20"
             >
               Get Involved
-              <span className="h-1.5 w-1.5 rounded-full bg-ember-500 group-hover:animate-ping" />
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 group-hover:animate-ping" />
             </a>
           </div>
 

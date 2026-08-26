@@ -1,3 +1,5 @@
+'use client';
+
 import { ArrowRight, Mail } from 'lucide-react';
 import { useInView } from '@/hooks/useInView';
 
@@ -13,14 +15,14 @@ export default function CTA() {
           }`}
         >
           {/* Glow */}
-          <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-72 w-[600px] rounded-full bg-ember-600/20 blur-[120px]" />
-          <div className="pointer-events-none absolute bottom-0 right-1/4 h-48 w-48 rounded-full bg-electric-600/15 blur-[100px]" />
+          <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-72 w-[600px] rounded-full bg-emerald-600/20 blur-[120px]" />
+          <div className="pointer-events-none absolute bottom-0 right-1/4 h-48 w-48 rounded-full bg-gold-600/15 blur-[100px]" />
 
           <div className="relative">
-            <span className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.25em] text-ember-400 mb-5">
-              <span className="h-px w-8 bg-ember-500" />
+            <span className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.25em] text-emerald-400 mb-5">
+              <span className="h-px w-8 bg-emerald-500" />
               Join the movement
-              <span className="h-px w-8 bg-ember-500" />
+              <span className="h-px w-8 bg-emerald-500" />
             </span>
             <h2 className="font-display text-4xl sm:text-6xl font-bold text-white tracking-tight leading-[1.05] max-w-3xl mx-auto">
               Build with us. Or <span className="text-gradient-mix">sponsor the next.</span>
@@ -34,7 +36,7 @@ export default function CTA() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#events"
-                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-ember-500 to-ember-600 px-7 py-4 text-sm font-semibold text-white transition-all hover:shadow-xl hover:shadow-ember-600/30 hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-7 py-4 text-sm font-semibold text-white transition-all hover:shadow-xl hover:shadow-emerald-600/30 hover:-translate-y-0.5"
               >
                 Register for an event
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

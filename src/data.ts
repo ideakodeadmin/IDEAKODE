@@ -26,7 +26,7 @@ export type Event = {
   participants: number;
   reach: number;
   reachLabel: string;
-  accent: 'ember' | 'electric';
+  accent: 'emerald' | 'gold';
   highlights: string[];
   status: 'past' | 'live' | 'upcoming';
   date: string;
@@ -54,7 +54,7 @@ export const events: Event[] = [
     participants: 3000,
     reach: 200000,
     reachLabel: '2 Lakh+ students reached',
-    accent: 'ember',
+    accent: 'emerald',
     highlights: ['24-hour hackathon', 'Live mentorship tracks', 'On-spot prizes'],
     status: 'past',
     date: 'March 2025',
@@ -105,7 +105,7 @@ export const events: Event[] = [
     participants: 5000,
     reach: 500000,
     reachLabel: '5 Lakh+ students reached',
-    accent: 'electric',
+    accent: 'gold',
     highlights: ['Weekend-long build', 'Industry judges', 'Titan-scale prizes'],
     status: 'past',
     date: 'October 2025',
@@ -156,7 +156,7 @@ export const events: Event[] = [
     participants: 1200,
     reach: 400000,
     reachLabel: '4 Lakh+ students reached',
-    accent: 'ember',
+    accent: 'emerald',
     highlights: ['Engineer-led talks', 'Guided build sprints', 'Career networking'],
     status: 'upcoming',
     date: 'February 2026',

@@ -1,3 +1,5 @@
+'use client';
+
 import { Users, TrendingUp, Building2, Calendar } from 'lucide-react';
 import { useInView, useCountUp } from '@/hooks/useInView';
 import { stats } from '@/data';
@@ -16,10 +18,10 @@ export default function Stats() {
   const events = useCountUp(stats.eventsRun, inView, 1200);
 
   const cards = [
-    { icon: Users, value: `${participants.toLocaleString()}+`, label: 'Total participants', accent: 'text-ember-400' },
-    { icon: TrendingUp, value: formatLakh(reach), label: 'Students reached', accent: 'text-electric-400' },
-    { icon: Building2, value: `${sponsors}+`, label: 'Sponsors partnered', accent: 'text-ember-400' },
-    { icon: Calendar, value: `${events}`, label: 'Flagship events', accent: 'text-electric-400' },
+    { icon: Users, value: `${participants.toLocaleString()}+`, label: 'Total participants', accent: 'text-emerald-400' },
+    { icon: TrendingUp, value: formatLakh(reach), label: 'Students reached', accent: 'text-gold-400' },
+    { icon: Building2, value: `${sponsors}+`, label: 'Sponsors partnered', accent: 'text-emerald-400' },
+    { icon: Calendar, value: `${events}`, label: 'Flagship events', accent: 'text-gold-400' },
   ];
 
   return (
